@@ -33,11 +33,11 @@ function StarshipSearch({ onSearch, onReset, numOfresults }) {
 
                 <button type='submit'>Search</button>
             </form>
-{/* 
+
             <p className='search-meta'>
                 Number of results : {numOfresults} {'-'}
                 {prevSearchTerm ? `Last Search: ${prevSearchTerm}` : ' Search for a starship by name'}
-            </p> */}
+            </p>
             
             {prevSearchTerm && (
                 <button onClick={handleReset}>Show All starships</button>

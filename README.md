@@ -1,16 +1,37 @@
-# React + Vite
+# React Starships Search ˖✶⋆.˚ 🛸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React app that fetches data from the **Star Wars API (SWAPI)** and lets users search for starships by name.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch and display a list of starships from SWAPI  
+- Show key details for each starship:
+  - Name  
+  - Starship class  
+  - Manufacturer  
+  - Model  
+- Search bar with:
+  - Partial name matching (e.g. “falcon” → “Millennium Falcon”)  
+  - Case-insensitive search  
+- Search metadata:
+  - Number of results currently shown  
+  - Last search term (or a default message if no search was made)  
+- “Show all starships” button to reset the search results  
+- Simple Star Wars–themed UI (custom font, glowing title, starry background)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (Vite)
+- JavaScript (ES6+)
+- CSS
+- Axios
+- Star Wars API (SWAPI)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
